@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!--NavB-->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>KyalSinThoon</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="courses.html" class="nav-item nav-link">Courses</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Instructors</a>
+                        <a href="testimonial.html" class="dropdown-item">Student's feedback</a>
+
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!--/NavB-->
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col">
+                <h3 class="mb-4">Bootstrap's grid</h3>
+                <img src="data:image/png;base64,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"
+                    class="img-fluid" alt="...">
+
+                <p> It is built with flexbox and allows up to 12 columns across the page.</p>
+                <p>If you do not want to use all 12 columns individually, you can group the columns together to create
+                    wider columns:</p>
+
+            </div>
+            <div class="col">
+                <h3 class="mb-4">The grid system</h3>
+                <img src="https://themesberg.s3.us-east-2.amazonaws.com/public/posts/bootstrap-5-release-date-and-changes.png"
+                    class="img-fluid" alt="...">
+                <p>It is responsive, and the columns will re-arrange automatically depending on the screen size
+                </p>
+                <p>Make sure that the sum adds up to 12 or fewer (it is not required that you use all 12 available
+                    columns)</p>
+            </div>
+            <div class="col">
+                <h3 class="mb-4">Bootstrap's grid</h3>
+                <img src="https://i.ytimg.com/vi/6n8i05oUHYg/maxresdefault.jpg" class="img-fluid" alt="...">
+                <p> It is built with flexbox and allows up to 12 columns across the page.</p>
+                <p>If you do not want to use all 12 columns individually, you can group the columns together to create
+                    wider columns:</p>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+        <h1 class="display-4 text-center text-muted my-5">Course offers</h1>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="https://wallpaperaccess.com/full/4623140.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap 5 Course</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.
+                            This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="https://wallpaperaccess.com/full/4623140.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap 5 Course</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.
+                            This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card mb-3">
+                    <img src="https://wallpaperaccess.com/full/4623140.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap 5 Course</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.
+                            This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="display-4 text-center text-muted my-5">Programming Course</h1>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="">C and C++ course</h5>
+                        <span class="badge badge bg-info p-2">10 am</span>
+                    </div>
+                    <p class="mb-1">Tr Khin Nwe Win(Master in computer science)</p>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="">Visual Basic.NET</h5>
+                        <span class="badge badge bg-info p-2">3 pm</span>
+                    </div>
+                    <p class="mb-1">Tr Khin Nwe Win(Master in computer science)</p>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="">Android Development with Java</h5>
+                        <span class="badge badge bg-info p-2">10 am</span>
+                    </div>
+                    <p class="mb-1">Aung Pyae Paing(Project manager)</p>
+                </li>
+            </ul>
+            <div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+        </div>
+</body>
+
+</html>
